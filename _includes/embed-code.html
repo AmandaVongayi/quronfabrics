@@ -1,0 +1,74 @@
+<style>
+
+    
+    #content-blocks-{{forloop.index0}} .background-color
+      {background-color: {{item.background-color}};}
+
+
+
+/* ------------------------------------ // --------------------------------------- Mobile Styles ------------------------------------ // --------------------------------------- */
+
+/* ".mob-" = mobile settings < 500px*/
+/* ".med-" = tablet specific settings < */
+/* ".large-" = desktop specific settings */
+/* Mobile Settings */
+
+  
+/* X-Large Screen: Larger than typical laptop */
+@media(min-width:1920px){
+
+
+
+
+}
+
+@media(max-width: 1250px){
+
+}
+/* Large Screen: Larger than typical laptop */
+@media(max-width:990px){
+
+ 
+
+    }
+
+/* Medium Screen - Tablet */
+@media(max-width:850px){
+
+
+
+
+}
+
+
+@media(max-width:770px){
+
+    
+}
+
+/* Small Screen - Mobile */
+@media(max-width:550px){
+
+
+    
+}
+
+/* Extra Small*/
+@media(max-width:450px){
+
+
+    }
+
+
+</style>
+
+
+<section id="content-blocks-{{forloop.index0}}">
+<section class=" padded-sides background-color">
+    {{site.data.embed-codes.embed-code-1}}
+    {{site.data.embed-codes.embed-code-2}}
+    {{site.data.embed-codes.embed-code-3}}
+    {{site.data.embed-codes.embed-code-4}}
+    {{site.data.embed-codes.embed-code-5}}
+</section>
+</section>

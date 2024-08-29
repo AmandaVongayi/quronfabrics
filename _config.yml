@@ -1,0 +1,73 @@
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "linking"
+      type: "pages" 
+    values:
+      layout: "link-in-bio" # overrides previous default layout
+
+
+_inputs:
+  main-heading_html:
+    options:
+      blockquote: true
+      bold: true
+      format: h1 h2 h3 
+      italic: true
+      strike: true
+      underline: true 
+      bulletedlist: true
+      numberedlist: true
+      horizontalrule: true
+      image: true
+      undo: true
+      redo: true
+  sub-heading_html:
+    options:
+      blockquote: true
+      bold: true
+      format: h4 h5 h6
+      italic: true
+      strike: true
+      underline: true 
+      bulletedlist: true
+      numberedlist: true
+      horizontalrule: true
+      image: true
+      undo: true
+      redo: true
+  textarea_html:
+    options:
+      blockquote: true
+      bold: true
+      format: p
+      italic: true
+      strike: true
+      underline: true 
+      bulletedlist: true
+      numberedlist: true
+      horizontalrule: true
+      image: true
+      undo: true
+      redo: true
+
+page_blocks: []
+_array_structures:
+  content-blocks:
+    values:
+      - label: 
+        icon: 
+        value: 
+          _section-type: 
+          content-block-id:
+fonts:
+_select_data:
+  fonts:
+    

@@ -1,0 +1,56 @@
+--- 
+layout: default 
+categories:
+  - image: /images/quron-fabrics-placeholder-15.webp
+    category-name: Silk
+    category-page-link: #
+  - image: /images/quron-fabrics-placeholder-11.webp
+    category-name: Silk
+    category-page-link: #
+  - image: /images/quron-fabrics-placeholder-12.webp
+    category-name: Silk
+    category-page-link: #
+--- 
+
+<section class = "grid bg-image tall-50" style = "background-image: url('/images/quron-fabrics-placeholder-15.webp');">
+    <section class = "col-12 tall-50 overlay grid">
+        <div class = "col-12 grid-right padded">
+            <div class = "col-12 padded-sm">
+                <h1 class = "featured">Quron Fabrics Shop</h1>
+            </div>
+            <div class = "col-8-right margin">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis inventore sit nihil hic, sed obcaecati nostrum labore magni autem ad aut eligendi, sequi fugit expedita molestiae laborum nulla tempora?</p>
+            </div>
+
+        </div>
+        
+
+    </section>
+    
+</section>
+
+
+<section class = "grid padded">
+    {% for item in page.categories %}
+        <div class = "col-4_sm-6_xs-12">
+            <div class = "padded">
+                <a href = "{{item.category-page-link}}">
+                    <div class = "category bg-image tall-60" style = "background-image: url('{{item.image}}')">
+                        <div class = "overlay grid-middle tall-60 center padded-sm">
+                            <div class = "col-12">
+                                <h4 class = "featured">{{item.category-name}}</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+        {% endfor %}
+</section>
+
+
+
+
+

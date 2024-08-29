@@ -1,0 +1,529 @@
+
+:root {
+    --background-color: #F0F5F7;
+    --dark-color: #156C90;
+    --light-color: #DEEEEC;
+    --accent-color: #C2DA6B; 
+    --heading-font: "Donau Uppercase";
+    --body-font: "Montserrat", sans-serif;
+}
+
+/* To be Deleted */ 
+
+/* div, section, nav, header, footer {border: 1px solid red;}
+h3, h4, h5, h6 {border: 1px solid yellow;}
+h1, h2 {border: 1px solid grey;}
+p, a{border: 1px solid pink;}
+hr, img{border: 1px solid blue;}  */
+
+/* General Code Starts here */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* make sure there is no overlap */
+[class*=grid-], 
+[class*=grid_], 
+[class~=grid] {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+ /* this overrides the default padding and margin on gridlex elements */
+ [class*=grid] {   margin: 0;  }
+ [class*=col]  {   padding: 0; }
+
+/* Add Font */
+
+
+@font-face {
+    font-family: "Donau Uppercase";
+    src: url('/fonts/Donau\ Neue_Uppercase.otf');
+}
+
+html 
+  {
+  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+  overflow-x: hidden;
+  touch-action: manipulation;
+  }
+
+/* Padding annd Margin Standard Styles */
+
+/* Padding Utility Classes */
+
+.padded-xsm { padding: 1.5%; }
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
+
+.padded-sides-sm {padding: 0% 2.5%;}
+.padded-sides {padding: 0% 5%;}
+.padded-sides-lg {padding: 0% 15%;}
+.padded-sides-xlg {padding: 0% 25%;}
+
+.padded-l-sm{ padding-left: 2.5%;}
+.padded-l{ padding-left: 5%;}
+.padded-l-lg{ padding-left: 10%;}
+
+.padded-r-sm{ padding-right: 2.5%;}
+.padded-r{ padding-right: 5%;}
+.padded-r-lg{ padding-right: 10%;}
+
+.padded-t-sm  { padding-top: 2.5%; }
+.padded-t  { padding-top: 5%; }
+.padded-t-lg  { padding-top: 10%; }
+
+.padded-b-sm  { padding-bottom: 2.5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-b-lg  { padding-bottom: 10%; }
+
+.padded-tb-xs  { padding-top: 1.5%; padding-bottom: 1.5%; }
+.padded-tb-sm  { padding-top: 2.5%; padding-bottom: 2.5%; }
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-tb-lg  { padding-top: 10%; padding-bottom: 10%; }
+
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
+
+/* Margin Utility Classes */ 
+
+.margin{
+    margin: 5%;
+}
+.margin-t-sm { margin-top: 2.5%; }
+.margin-t { margin-top: 5%; }
+.margin-t-lg { margin-top: 10%; }
+
+.margin-b-sm { margin-bottom: 2.5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-b-lg { margin-bottom: 10%; }
+
+
+.margin-l-sm { margin-left: 2.5%; }
+.margin-l { margin-left: 5%; }
+.margin-l-lg { margin-left: 10%; }
+
+.margin-r-sm { margin-right: 2.5%; }
+.margin-r { margin-right: 5%; }
+.margin-r-lg { margin-right: 10%; }
+
+.margin-tb-sm { margin-top: 2.5%; margin-bottom: 2.5%; }
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-tb-lg { margin-top: 10%; margin-bottom: 10%; }
+
+.margin-lr-sm { margin-left: 2%; margin-right: 2%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+.margin-lr-lg { margin-left: 10%; margin-right: 10%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+
+/* min heights */
+
+.tall-40{min-height: 40vh;}
+.tall-50{min-height: 50vh;}
+.tall-60{min-height: 60vh;}
+.tall-70{min-height: 70vh;}
+.tall-80{min-height: 80vh;}
+.tall-90{min-height: 90vh;}
+.tall-100{min-height: 100vh;}
+.tall-110{min-height: 110vh;}
+.tall-120{min-height: 120vh;}
+
+/* Typography standard styles */
+
+.left    { text-align: left; }
+.right   { text-align: right; }
+.center  { text-align: center; }
+
+/* Fonts */
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color: var(--dark-color);
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.featured{ color: var(--accent-color) }
+
+/* Text styles, font weights, font sizes */
+h1, h2, h3 {
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+}
+
+h1{font-size: 5rem;}
+h2{font-size: 4rem;}
+h3,h4{font-size: 3rem;}
+h5, h6{font-size: 2rem;}
+
+h4,h5,h6{
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.4; 
+    margin-bottom: 1rem;
+}
+
+a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
+p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* General Classes */
+
+.bg-image{
+    background-color: var(--dark-color);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Layout */
+
+.logo{
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+    color: var(--accent-color);
+    
+}
+
+.logo a{
+    font-size: 4rem;
+
+}
+
+.hamburger-button {
+    cursor: pointer;
+    padding: 0 0.5rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 3.5rem;
+    line-height: 0.8;
+    margin-top: -0.7rem;
+    position: fixed;
+    right: 1rem;
+    top: 2.5rem;
+    z-index: 6;
+    color: var(--dark-color);
+}
+
+.hamburger-button.active {
+    color: white;
+}
+
+.menu {
+    display: none; 
+    background-color: var(--accent-color); 
+    padding: 5%;
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    z-index: 5;
+}
+
+
+.menu a {
+    text-decoration: none; 
+    color: inherit; 
+    padding: 5vh 5%;
+    display: block;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+
+/* Home Page */
+
+.home-banner-image{
+    background-image: url('/images/quron-fabrics-placeholder-18.webp');
+    min-height: 80vh;
+}
+
+.home-banner{
+    h1{
+        font-size: 7rem;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+    }
+}
+
+.welcome-image-1{
+    background-image: url('/images/quron-fabrics-placeholder-15.webp');
+    margin: 5% 0;
+    color: var(--background-color);
+    .overlay{
+        padding-top: 5% !important;
+        padding-bottom: 5% !important;
+    }
+}
+
+.welcome-image-2{
+    background-image: url('/images/quron-fabrics-placeholder-11.webp');
+    min-height: 60vh;
+}
+
+.welcome-image-3{
+    background-image: url('/images/quron-fabrics-placeholder-12.webp');
+    min-height: 60vh;
+}
+
+.overlay{
+    background-color: rgba(21, 108, 144, 0.4);
+}
+
+.process h3{
+    font-size: 5rem;
+    color: var(--accent-color);
+}
+
+.process h5{
+    font-size: 3rem;
+}
+
+
+/* Quote */
+
+.quote-marks{
+    font-size: 15rem;
+    color: var(--dark-color);
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-style: italic;
+}
+.left-quote-mark{
+    translate: 40% -15%;
+}
+.right-quote-mark{
+    translate: -80% 25%;
+}
+.quote h5{
+    font-size: 6rem;
+}
+
+
+/* Category */
+
+.category .overlay{
+    opacity: 0;
+    transition: 0.5s all;
+}
+
+.category .overlay h4{
+    display: none;
+    transition: 0.5s all;
+}
+
+.category:hover .overlay{
+    opacity: 1;
+}
+
+.category:hover .overlay h4{
+    display: block;
+}
+
+
+/* Shop Layout */
+
+.category-nav{
+    border-bottom: 2px solid var(--dark-color);
+}
+
+.category-nav a{
+    color: var(--dark-color);
+    transition: 0.7s all;
+}
+
+.category-nav a:hover{
+    color: var(--accent-color)
+}
+
+
+/* Products */
+
+.product-preview{
+    padding: 2%;
+}
+
+.contact-form{
+    background-color: var(--accent-color);
+    position: absolute;
+    width: 70%;
+    top: 40%;
+    left: 15%;
+    margin-bottom: 3rem !important;
+}
+
+.contact-form form input,
+.contact-form form textarea,
+.contact-form form button{
+    display: block;
+    margin: 2%;
+}
+
+.contact-form form input,
+.contact-form form textarea{
+    width: 95%;
+    padding: 1% 2%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--dark-color);
+}
+
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder{
+    color: var(--dark-color);
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.contact-form form textarea{
+    margin-top: 5rem;
+}
+
+.contact-form form button{
+    padding: 0.5% 3%;
+}
+
+.contact-icons a{
+    display: inline-block;
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    padding: 0.2%;
+    margin: 0.5%;
+    transition: 0.7s all;
+}
+
+.contact-icons a:hover{
+    color: var(--light-color);
+}
+
+
+
+/* ------------------------------------ // --------------------------------------- Mobile Styles ------------------------------------ // --------------------------------------- */
+
+/* ".mob-" = mobile settings < 500px*/
+/* ".med-" = tablet specific settings < */
+/* ".large-" = desktop specific settings */
+/* Mobile Settings */
+.xs-mob-show, .mob-show, .tablet-show, .large-show{
+    display: none; 
+  }
+
+/* X-Large Screen: Larger than typical laptop */
+@media(min-width:1920px){
+    .large-hide { display: none; }
+    .large-show { display: block; }
+
+
+
+}
+  
+/* gridlex lg screen */
+@media(max-width: 1280px){}
+
+/* gridlex md screen */
+@media(max-width: 1024px){}
+@media(max-width:990px){
+    h1{font-size: 4rem;}
+    h2{font-size: 3rem;}
+    h3,h4{font-size: 2rem;}
+    h5, h6{font-size: 1.5rem;}
+    p {font-size: 1.3rem;}
+    a{font-size: 1.5rem;}
+ 
+
+    }
+@media(max-width: 850px){
+	.tablet-hide { display: none; }
+	.tablet-show { display: block; }
+}
+
+/* Gridlex sm screen */
+@media(max-width: 768px){}
+@media(max-width: 660px){}
+@media(max-width: 600px){}
+
+/* Gridlex xs screen */
+@media(max-width: 576px){
+    .mob-hide { display: none; }
+    .mob-show { display: block; }
+
+    p {font-size: 1.1rem;}
+    a{font-size: 1.1rem;}
+}
+@media(max-width: 500px){}
+@media(max-width: 440px){}
+@media(max-width: 400px){}
+@media(max-width: 350px){}
+@media(max-width: 300px){}
+
+  
+
+
+
