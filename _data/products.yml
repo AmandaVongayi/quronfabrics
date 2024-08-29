@@ -1,10 +1,7 @@
 - category: ebooks
-  buy-button-code: >-
-    <div id='product-component-1724191838434'></div>
-  buy-button-script: >-
-    <script type="text/javascript">
-    /*<![CDATA[*/
-    (function () {
+  buy-button-code: <div id='product-component-1724191838434'></div>
+  buy-button-script: |-
+    <script type="text/javascript"> /*<![CDATA[*/ (function () {
       var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
       if (window.ShopifyBuy) {
         if (window.ShopifyBuy.UI) {
@@ -92,6 +89,7 @@
           });
         });
       }
-    })();
-    /*]]>*/
-    </script>
+    })(); /*]]>*/ </script>
+- category: ''
+  buy-button-code: ''
+  buy-button-script: ''

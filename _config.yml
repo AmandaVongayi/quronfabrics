@@ -12,7 +12,10 @@ defaults:
       type: "pages" 
     values:
       layout: "link-in-bio" # overrides previous default layout
-
+  
+categories:
+  - Fabrics
+  - Scarves
 
 _inputs:
   main-heading_html:
