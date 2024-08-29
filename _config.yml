@@ -13,7 +13,7 @@ defaults:
     values:
       layout: "link-in-bio" # overrides previous default layout
   
-categories:
+category:
   - Fabrics
   - Scarves
 
