@@ -12,12 +12,12 @@ defaults:
       type: "pages" 
     values:
       layout: "link-in-bio" # overrides previous default layout
-  
-category:
-  - Fabrics
-  - Scarves
+
 
 _inputs:
+  category:
+    type: text
+    label: "Category"
   main-heading_html:
     options:
       blockquote: true
